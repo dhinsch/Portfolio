@@ -1,0 +1,42 @@
+.menu {
+  z-index: 5;
+
+  width: 100%;
+
+  &-nav {
+    display: flex;
+
+    align-content: space-between;
+    justify-content: flex-end;
+
+    margin: 0;
+    list-style: none;
+  }
+
+  .nav-item {
+    padding: 0 15px;
+    a {
+      color: #fff;
+    }
+
+    .active {
+      visibility: visible;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: $light-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}

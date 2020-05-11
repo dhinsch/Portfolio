@@ -10,27 +10,19 @@
       src="https://kit.fontawesome.com/a9af342d9c.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="./dist/css/main.css" />
   </head>
 
-  <body id="homepage">
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-    </header>
-    <main id="main-grid">
+  <body class="homepage">
+    <header class= "main-header" id ="home">
+     
+    
       <nav class="menu">
+        <a href="#home" ><h1 class="name-heading">DIANE HINSCH</h1></a>
+        
         <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="#home" class="nav-link">Home</a>
-          </li>
+
           <li class="nav-item">
             <a href="#about" class="nav-link">About</a>
           </li>
@@ -43,67 +35,83 @@
           </li>
         </ul>
       </nav>
-      <div class="name">
-        <h1 class="lg-heading-2">DIANE HINSCH</h1>
-      </div>
+      </header>
 
-      <div class="heading">
-        <h2 class="md-heading">
-          A Web Developer building better connections between technology &
+  
+         
+
+      <div class="top-heading">
+        <h2 class="heading">
+          I'm a Web Developer who builds better connections between technology &
           people.
         </h2>
       </div>
+      <div class="cta">
+      <button class="cta-btn">
+        <a href="#contact">Let's Build Together</a>
+      </button>
+</div>
+     
+        <div class="services">
+          <div class="service-card">
+            <h3 class = "text-secondary">WEB DESIGN</h3>
+            <p class="services-info">
+            Creating website designs that feature businesses’ personal style and character.<br><br>
+            <h4 class = "text-secondary">Focus Areas:</h4><br>
+            Logo Design<br>
+            Custom Illustration<br>
+            Deliverable Mockups</p>
+          </div>
+          <div class="service-card">
+           <h3 class = "text-secondary">WEB DEVELOPMENT</h3>
+            <p class="services-info">
+            Building responsive websites and databases for reasons.<br><br>
 
-      <div class="description" id="about">
+            <h4 class = "text-secondary">Focus Areas:</h4><br>
+            Javascript  + Node.js<br>
+            PHP + Wordpress CMS<br>
+            mySQL & MongoDB<br>
+            </p>
+          </div>
+          <div class="service-card">
+            <h3 class = "text-secondary">CONTENT STRATEGY</h3>
+            <p class="services-info">
+            Using SEO & analytics to create personalized content campaigns that drive growth and increase engagement. 
+            </p>
+          </div>
+        </div>
+
+        <section class ="about">
+        <h1 class="lg-title">
+          <i class="fas fa-user-astronaut"></i>
+          I’m Diane.
+        </h1>
         <div class="bio-image">
           <img
-            src="./dist/img/portrait.JPG"
+            src="./dist/img/g4921.png"
             alt="Picture of a smart, funny developer"
           />
         </div>
-        <div class="about-info">
-          <h1 class="lg-title">
-            <i class="fas fa-user-astronaut"></i> I’m Diane.
-          </h1>
+        <article class="about-info">
+          
+          <p>artist. naturalist. space nerd. music-lover. mom.</p>
+          <p>Over my time spent working with small businesses, I’ve found my knack for analysis-driven strategies & efficiency.</p>
+          <p>Coupled with my fiery creative drive and love of functional design, I offer a unique skillset to bring to developing websites, web apps, and content campaigns.</p>
+          <p>In my spare time I explore the Florida outdoors, paint with my kids, or watch MST3K reruns.</p>
           <p>
-            Over my time spent working with small businesses, I have
-            demonstrated my talent for increasing efficiency and solving
-            problems.
-          </p>
-          <p>
-            I’ve found that my fiery creative drive and penchant for
-            analysis-driven strategies are a great fit for supporting businesses
-            through development and beyond.
-          </p>
-          <p>
-            Coupling those skills with an artist's eye, customer service
-            training and marketing experience - I offer a unique perspective and
-            skillset to bring to developing websites, web apps, and content
-            campaigns.
-          </p>
-          <p>
-            See more about my experience on
+            Check out my experience on
             <a class="text-secondary" href="www.linkedin.com/dianehinsch"
               >LinkedIn</a
-            >.
+            > or <a class="text-secondary" href="#download-resume">Download My Resume</a>
           </p>
 
-          <h2 class="text-secondary">Focus Areas:</h2>
-          <ul>
-            <li>Wordpress CMS</li>
-            <li>Web Design</li>
-            <li>Javascript & Node.JS</li>
-            <li>PHP</li>
-            <li>SQL & NoSQL</li>
-            <li>SEO & Google Analytics</li>
-            <li>Content Management & Branding</li>
-          </ul>
-        </div>
+         </article>
+        </section>
 
-        <div class="contact icons" id="contact">
-          <hr />
-          <br />
-          <h1 class="lg-title">
+        <section class="contact icons" id="contact">
+     <h1 class="lg-title">
+ 
+     
             <i class="fas fa-satellite-dish"></i> CONTACT
           </h1>
           <br />
@@ -115,15 +123,17 @@
           ></a>
           <a href=""><i class="fab fa-github fa-2x"></i></a>
           <a href=""><i class="fab fa-stack-overflow fa-2x"></i></a>
-          <br /><br />
-          <hr />
-        </div>
+</div>
 
-        <div class="projects" id="projects">
+        
+      
+            </section>
+
+        <section class="projects" id="projects">
           <h2 class="lg-title"><i class="fas fa-rocket"></i> PORTFOLIO</h2>
 
-          <ul>
-            <li>
+          <ul class="portolio-items">
+            <li class="portfolio-item">
               <figure>
                 <a href="https://www.lamurga.net"
                   ><img
@@ -131,41 +141,9 @@
                     alt="La Murga Website Screenshot"
                 /></a>
               </figure>
-              <h2 class="text-secondary">Web Developer Internship</h2>
-
-              <h3>Aug-Dec 2019</h3>
-              <p>
-                During my internship, I optimized La Murga’s Website,
-                incorporated analytics and helped create a content campaign to
-                engage with potential clients.
-              </p>
-              <div class="more-detail-container">
-                <a class="more-btn">Read Details</a>
-                <p class="more-detail">
-                  I utilized my technical skills to:
-                </p>
-                <ul class="more-detail">
-                  <li>Refresh Content on Website</li>
-                  <li>
-                    Perform website maintenance and manage plugins on Wordpress
-                  </li>
-                  <li>
-                    Contribute to creating a Chatbot using Dialogflow & Google
-                    APIs
-                  </li>
-                  <li>Create a new vector logo</li>
-                  <li>
-                    Refine a content strategy that used social media and
-                    newsletter campaigns
-                  </li>
-                </ul>
-              </div>
-              <a href="https://www.lamurga.net" class="btn-dark">
-                <i class="fas fa-eye"></i> View Website
-              </a>
             </li>
 
-            <li>
+            <li class="portfolio-item">
               <figure>
                 <a href="https://www.lamurga.net"
                   ><img
@@ -173,44 +151,18 @@
                     alt="Node Logo"
                 /></a>
               </figure>
-              <h2 class="text-secondary">Issue Tracker API</h2>
-
-              <p>
-                An issue-tracking system that also manages users using NodeJS.
-                It attempts to be closer to production-ready than a simple API
-                program.
-              </p>
-              <div class="more-detail-container">
-                <a class="more-btn">Read Details</a>
-                <p class="more-detail">
-                  I utilized my technical skills to:
-                </p>
-                <ul class="more-detail">
-                  <li>Create CRUD Functionality for Users and Issues</li>
-                  <li>
-                    Provide a MongoDB database for Issue Loggin
-                  </li>
-                </ul>
-              </div>
-
-              <a
-                href="https://github.com/dhinsch/Issue_Tracker"
-                class="btn-light"
-              >
-                <i class="fab fa-github"></i> Github
-              </a>
             </li>
           </ul>
-        </div>
-      </div>
-
-      <div class="footer">
+      
+      </section>
+  
+      <footer class="main-footer">
         <ul>
           <li class="text-secondary">Navigation</li>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#projects">My Work</a></li>
+          <li><a href="#projects">Portfolio</a></li>
         </ul>
         <ul>
           <li class="text-secondary">General Inquiries:</li>
@@ -218,14 +170,13 @@
         </ul>
         <ul class="subtext">
           <li class="text-secondary">Image Credit:</li>
-          <li>NASA, ESA and the Hubble Heritage Team (STScI/AURA)</li>
-          <li>
-            Acknowlegement: A. Cool (San Francisco State Univ.) and J. Anderson
+          <li>NASA, ESA and the Hubble<br> Heritage Team (STScI/AURA)<br>
+            Acknowlegement:<br> A. Cool (San Francisco State Univ.)<br> and J. Anderson<br>
             (STScI)
           </li>
         </ul>
       </div>
-    </main>
+    
 
     <script src="./dist/js/main.js"></script>
   </body>

@@ -1,0 +1,171 @@
+.homepage {
+  @include background;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 30vh);
+
+  //height: 100vh;
+  width: 100%;
+  position: relative;
+
+  grid-template-areas:
+    'main-header main-header main-header'
+    'heading heading .'
+    'cta . .'
+    'services services services'
+    'about about about'
+    'contact contact contact'
+    'projects projects projects'
+    'footer footer footer';
+
+  nav.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'my-name my-name menu-nav menu-nav';
+    @include layoutPadding;
+    background: $header-footer-bg;
+    .name-heading {
+      grid-area: my-name;
+      width: 100%;
+    }
+    .menu-nav {
+      grid-area: menu-nav;
+    }
+  }
+
+  header {
+    grid-area: main-header;
+    width: 100%;
+  }
+
+  .top-heading {
+    grid-area: heading;
+    @include layoutPadding;
+    //  line-height: 60px;
+    //  text-align: right;
+    //  padding: 1rem;
+    //  align-self: end;
+  }
+
+  .cta {
+    grid-area: cta;
+    @include layoutPadding;
+  }
+
+  /* background: linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(0, 0, 0, 0.8) 12%
+          ); 
+    grid-area: main;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.8) 12%
+    );
+    */
+
+  .services {
+    @include layoutPadding;
+    grid-area: services;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+
+    .service-card {
+      background-color: $dark-color;
+      text-align: center;
+      margin: 1rem;
+    }
+  }
+
+  .about {
+    grid-area: about;
+    background: #000;
+    display: grid;
+    grid-template-areas:
+      'title . . '
+      'bio-image about-info about-info';
+    @include layoutPadding;
+    .lg-title {
+      grid-area: title;
+    }
+    .about-info {
+      grid-area: about-info;
+      padding: 2rem;
+    }
+    .bio-image {
+      grid-area: bio-image;
+      margin: auto;
+
+      justify-self: center;
+      padding: 1.2rem;
+
+      @include fitImagesToContainer;
+    }
+  }
+
+  .projects {
+    grid-area: projects;
+    background-color: #000;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, 30vh);
+    grid-template-areas:
+      'p-title .'
+      'portfolio-items portfolio-items';
+    @include layoutPadding;
+    .lg-title {
+      grid-area: p-title;
+      text-align: start;
+    }
+    ul {
+      grid-area: portfolio-items;
+      list-style: none;
+      display: flex;
+
+      > li {
+        > figure > a {
+          @include fitImagesToContainer;
+        }
+      }
+    }
+  }
+}
+.contact {
+  grid-area: contact;
+  background-color: $dark-color;
+
+  @include layoutPadding;
+
+  &.icons {
+    display: flex;
+    direction: row;
+    align-content: space-around;
+    a {
+      padding: 2rem;
+
+      &.hover {
+        color: accent-color;
+      }
+    }
+  }
+}
+
+.main-footer {
+  grid-area: footer;
+
+  background-color: $footer-bg;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  & > ul {
+    list-style-type: none;
+  }
+  text-transform: uppercase;
+}

@@ -1,0 +1,13 @@
+body {
+  background-color: $bg-color;
+  color: $light-color;
+  font-weight: 2rem;
+
+  section .dark-bg {
+    background-color: $dark-color;
+  }
+
+  section .black-bg {
+    background-color: $bg-color;
+  }
+}

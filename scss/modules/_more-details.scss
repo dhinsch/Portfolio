@@ -1,0 +1,52 @@
+main {
+  & > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    list-style-type: none;
+  }
+
+  & > ul > li {
+    background: #2f1500;
+    border-bottom: $accent-color 7px solid;
+  }
+
+  & > ul > li > figure {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  & > ul > li > figure > a > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    margin: 0;
+
+    &:hover {
+      opacity: 0.6;
+      border-bottom: 3px $accent-color solid;
+      @include easeOut;
+    }
+  }
+
+  & > ul > li > p {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0rem 2.5rem;
+  }
+  & > ul > li > h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  & > ul > li > a {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+  }
+  & > ul > li > ul {
+    margin: 0rem 2.5rem;
+  }
+}

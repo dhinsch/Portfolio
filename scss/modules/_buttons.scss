@@ -1,0 +1,62 @@
+// Button Styles
+.btn {
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin: auto;
+
+  display: block;
+  transition: all 0.3s;
+  border-radius: 1%;
+  text-align: center;
+
+  &:hover {
+    background: $light-color;
+    color: #000;
+  }
+}
+
+.cta-btn {
+  background: $accent-color;
+  border: solid 1px #fff;
+  border-radius: 7px;
+  width: 350px;
+  a {
+    color: #000;
+    font-weight: bold;
+  }
+  padding: 0.5rem 1rem;
+  &:hover {
+    background: $light-color;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: #000;
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: $light-color;
+  color: #000;
+}
+
+.more-btn {
+  color: $accent-color;
+  cursor: pointer;
+  border: 1px $light-color solid;
+  padding: 0.5rem 1rem;
+  margin: 2.5rem;
+  &:active {
+    color: #fff;
+  }
+}
+
+.more-detail {
+  display: none;
+}
+.active {
+  display: block;
+  margin: 2.5rem;
+}
